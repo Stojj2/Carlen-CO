@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&family=Russo+One&display=swap');
+
+/*Body*/
+
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Header and nav bar*/
+
+header {
+    background-color: #000000f2;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#logo {
+    opacity: 0.7;
+    margin-top: 25px;
+}
+
+header>a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 8px;
+    line-height: 0;
+    font-size: 10px;
+}
+
+header>nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0%;
+    margin-top: 8px;
+}
+
+header>nav {
+    height: 32px;
+}
+
+header>nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header>nav a:hover {
+    font-weight: 800;
+}
+
+/* Footer section */
+
+footer {
+    justify-content: space-around;
+    text-align: center;
+    background-color: #fffffff2;
+    line-height: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.social-media a {
+    color: #000000cc;
+}
+
+/* Banner section */
+
+
+#banner {
+    display: flex;
+    height: 141px;
+    width: 89%;
+    margin-top: 160px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.banner-div {
+    display: flex;
+    height: 63px;
+    width: 103%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 16px;
+}
+
+
+/* home picture div*/
+
+#home {
+    width: 100%;
+    height: 70%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-picture {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.home-picture > img {
+}
+
+/* for big screen sizes from 900px wide and up */
+
+@media screen and (min-width: 900px) {
+
+    .home-picture {
+        height: 80%;
+        width: 50%;
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        align-items: flex-start;
+    }
+
+
+}
